@@ -1,0 +1,84 @@
+//main: ../moda.less
+@import "blocks/vars.less";
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+
+    & .card{
+        width: 18rem;
+        box-sizing: border-box;
+        height: 100px;
+        margin: 2%;
+        @media @mobile {
+        width: 100%;
+        }
+    }
+    & .card p {
+        background-color: rgb(251, 250, 248);
+        padding: 5%;
+    }
+}
+
+.gallery1  {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: 10% auto;
+    padding: 0;
+    @media @mobile {
+    margin-bottom: 0%;
+    display: block;
+    }
+
+    & .card{
+    box-sizing: border-box;
+    height: 100px;
+    margin: 2%;
+    @media @mobile {
+    margin: 100%  5%;
+    font-size: 200%;
+    width: 100%;
+    }
+    }
+    & .card p {
+    background-color: white;
+
+    //padding: 5%;
+    }
+}
+
+
+  a {
+    display: block; position: relative; text-decoration:none;       color: saddlebrown;
+ }
+ a:hover {
+    text-decoration:none;
+ }
+
+  a:after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(44, 41, 41, 0.5);  opacity: 0;
+}
+
+  a:before {
+       content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; ;
+
+}
+a:hover:before,
+a:hover:after { opacity: 1; }
+  
+
+#pod {
+//      margin-bottom: 25%;
+  }

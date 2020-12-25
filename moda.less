@@ -1,0 +1,245 @@
+//compress:false, sourceMap:true
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat.ttf);
+}
+@import "blocks/pib.less";
+@import "blocks/vars.less";
+
+body {
+    width: 100%;
+    @media @desktop {
+    width: 1350px;    
+    }  
+    @media @mobile {
+    width: 240%;     
+    }  
+   
+}
+@import "blocks/center.less";
+.carousel-indicators { 
+@media @mobile {
+visibility: hidden;
+}
+}
+
+.navbar-nav {
+    font-family:  Montserrat;
+}
+
+
+.btn-toolbar {
+
+}
+#a {
+    color: @white;
+    font-size: large;
+}
+#b {
+    color: @white;
+    font-size: 300%;
+}
+#c {
+    color: @white;
+}
+.btn-groupmr-2 {
+    width:24.9%;
+}
+
+
+#font_top
+{font-size: 22pt;}
+#font_d{
+
+}
+#pct {
+    margin: 10%;
+}
+.carousel-inner {
+    -moz-text-decoration-color: @white;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 14px;
+}
+.carousel-inner p {
+    text-decoration-color: rgb(255, 255, 255);
+}
+.btn-toolbar button {
+
+    margin-top: 50px;
+    margin-left: 40%;
+    background: @transparent;
+    border: @transparent;
+    color: black
+}
+.btn-toolbarmr-2 {
+  width:24.9%;
+}
+
+
+
+span {
+    color: @white;
+    font-size: large;
+    margin-right: 25%;
+}
+
+
+
+
+.kasporting-negosod-vompan{
+    width: 28px;
+    height: 38px;
+    margin: 10px auto 0px 0px;
+}
+.nacemakegun{
+  width: 400px;
+  position: relative;
+
+    & .gunarkeng{
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 30px;
+    color: #FFF;
+    padding-left: 10px;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    }
+}
+@import "blocks/gedsamugom.less";
+
+.nacemakegun:hover #gedsamugom{
+  width: 200px;
+  background-color: white;
+  text-align: center;
+}
+.nacemakegun:hover .gunarkeng{
+  color: #424242;
+}
+/*placeholder*/
+::-webkit-input-placeholder { color: #bfbfbf; }
+:-moz-placeholder { color: #bfbfbf;}
+::-moz-placeholder { color: #bfbfbf;}
+:-ms-input-placeholder { color: #bfbfbf;}
+.header{
+  background-image: url(img/mount.jpg);
+  background-repeat: no-repeat;
+  height: 1000px;
+
+}
+//gallery
+@import "blocks/gallery.less";
+
+
+
+
+.buttongruop {
+    margin-left: 40%;
+}
+
+Fce
+.tl{
+  width: 75%;
+  margin-left: 10%;
+  vertical-align: middle;
+}
+#sz{
+  width: 50px;
+  height: 50px;
+}
+@import "blocks/contanier.less";
+.tooltype {
+    background-image: url(img/Background.png);
+    color: @white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+
+
+    & span {
+    color: rgb(199, 178, 153);
+    font-size: 100%;
+    margin: 0px;
+    }
+    & h1 {
+    width: 40%;
+    margin-right: 20%;
+    }
+    & #PurchaseNow {
+    margin-left: 50%;
+    }
+}
+/*тема начало*/
+.photos{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .image{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #cc0000;
+  }
+
+
+  .card h1 {
+      font-size: 120%;
+  }
+#mrg {
+    margin-top: 10%;
+    & img {
+    width: 100%
+    }
+}
+/*тема конец*/
+#iphone {
+    margin-top: 10%;
+    margin-left: 10%;
+    @media @mobile {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    & img {
+    width: 100%;
+    }
+    }
+}
+//countres
+@import "blocks/countres.less";
+#mrg img {
+    @media @mobile {
+    width: 100%;
+}
+}
+.pur{
+  position: relative;
+  height:100%;
+  margin-left: 20%;
+  transform: translateX(200px);
+  transform: translateX(50%);
+  transform: translateY()(200px);
+  transform: translateY()(70%);  
+}
+.down {    
+
+    & img {
+    width: 100%;
+    }
+}
+//footer
+@import "blocks/footer.less";
+
+
